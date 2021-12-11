@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" prefHeight="500.0" prefWidth="750.0" spacing="0.0" xmlns="http://javafx.com/javafx/16"
+      fx:controller="com.maginot.MaginotController">
+    <padding>
+        <Insets bottom="0.0" left="0.0" right="0.0" top="0.0"/>
+    </padding>
+    <children>
+        <MenuBar VBox.vgrow="ALWAYS">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem fx:id="fileClose" mnemonicParsing="false" text="Close"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <HBox fillHeight="false" maxHeight="35.0" prefWidth="50.0" VBox.vgrow="ALWAYS">
+            <children>
+                <ColorPicker/>
+                <Button mnemonicParsing="false" text="Button"/>
+                <Button mnemonicParsing="false" text="Button"/>
+            </children>
+        </HBox>
+        <ScrollPane fx:id="mainPaneContainer" fitToHeight="true" fitToWidth="true" hbarPolicy="AS_NEEDED" maxHeight="1.7976931348623157E308"
+                    maxWidth="1.7976931348623157E308" vbarPolicy="AS_NEEDED">
+            <content>
+                <GridPane fx:id="mainPane">
+                </GridPane>
+            </content>
+        </ScrollPane>
+    </children>
+</VBox>

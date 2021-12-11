@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import com.maginot.model.*?>
+
+<HBox xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.maginot.MaginotController">
+   <children>
+      <TabPane minWidth="250.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Untitled Tab 1">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+          <Tab text="Untitled Tab 2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <ScrollPane fx:id="mainPaneContainer" fitToHeight="true" fitToWidth="true">
+         <content>
+            <MainGridPane fx:id="mainPane">
+            </MainGridPane>
+         </content></ScrollPane>
+   </children>
+</HBox>
